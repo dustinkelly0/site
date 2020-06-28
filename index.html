@@ -3,23 +3,25 @@
   <head>
     <meta charset="utf-8">
     <title>Site Under New Managment</title>
-    <style media="screen">
-      body {
-        background: black;
-      }
-
-      img {
-       position: absolute;
-       top: 50%;
-       left: 50%;
-       width: 460px;
-       height: 460px;
-       margin-top: -230px; /* Half the height */
-       margin-left: -230px; /* Half the width */
-      }
-    </style>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./styles.css"/>
   </head>
   <body>
-    <img src="kasturi.jpeg" alt="lmao" />
+  <div class="wrapper">
+    <form class="form-signin">       
+      <h2 class="form-signin-heading">Check yourself in!</h2>
+      <br>
+      <input type="text" class="form-control" name="username" placeholder="Email Address" required="" autofocus=""/>
+      <input type="password" class="form-control" name="password" placeholder="Password" required=""/>      
+      <label class="checkbox">
+        <input type="checkbox" value="remember-me" id="rememberMe" name="rememberMe"> Remember me
+      </label>
+      <br>
+      <button class="btn btn-lg btn-primary btn-block" type="submit">Login</button>   
+    </form>
+    <img src="assets/kasturi.jpeg" alt="lmao-cat" style="float:center;width:200px;height:200px;text-align: center"/>
+  </div>
+    
   </body>
 </html>
